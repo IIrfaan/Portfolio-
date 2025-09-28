@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irfaan | Data Science Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      max-width: 800px;
+      margin: auto;
+      margin-top: -0.8rem;
+      border-radius: 8px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0d6efd;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: color 0.3s, transform 0.2s;
+      padding: 0.3rem 0.6rem;
+      white-space: nowrap;
+    }
+    nav a:hover, nav a.active {
+      color: #20c997;
+      transform: scale(1.05);
+    }
+    section {
+      padding: 4rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .skills, .certs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .badge {
+      background: linear-gradient(135deg, #0d6efd, #20c997);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-out;
+    }
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+    .project-card h3 {
+      margin-top: 0;
+      color: #6610f2;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .project-card a:hover {
+      color: #20c997;
+    }
+    footer {
+      background: linear-gradient(135deg, #0d6efd, #6610f2);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #ffe082;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Animation visible class */
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Irfaan</h1>
+    <p>Aspiring Data Scientist | Python • SQL • ML • NLP • PowerBI</p>
+  </header>  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certs">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:750px; margin:auto; font-size:1.05rem; line-height:1.6;">
+      I'm a BCA student and aspiring Data Scientist with a strong foundation in Python, SQL, and Machine Learning.
+      I enjoy applying analytical and problem-solving skills to create impactful, data-driven solutions.
+      Looking for opportunities to contribute to innovative projects in data science and AI.
+    </p>
+  </section>  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="badge">Python</span>
+      <span class="badge">SQL</span>
+      <span class="badge">DBMS</span>
+      <span class="badge">Excel</span>
+      <span class="badge">Power BI</span>
+      <span class="badge">Statistics</span>
+      <span class="badge">Machine Learning</span>
+      <span class="badge">Deep Learning</span>
+      <span class="badge">NLP</span>
+    </div>
+  </section>  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Sales Prediction Model</h3>
+        <p>Built a predictive analytics model using Python and Scikit-learn to forecast sales trends.</p>
+        <a href="https://github.com/IIrfaan" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>NLP Chatbot</h3>
+        <p>Developed a chatbot using Python and NLP techniques to handle FAQs effectively.</p>
+        <a href="https://github.com/IIrfaan" target="_blank">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Hotel Booking Dashboard</h3>
+        <p>Analyzed booking cancellation trends in Excel and built an interactive PowerBI dashboard.</p>
+        <a href="https://github.com/IIrfaan" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>  <section id="certs">
+    <h2>Certifications</h2>
+    <div class="certs">
+      <span class="badge">Machine Learning Specialization (Coursera)</span>
+      <span class="badge">Power BI Data Analysis (Microsoft)</span>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact Me</h2>
+    <p style="text-align:center; font-size:1.05rem;">
+      <a href="mailto:irfaansyd8@gmail.com">Email Me</a> |
+      <a href="https://github.com/IIrfaan" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/lrfaan" target="_blank">LinkedIn</a>
+    </p>
+  </section>  <footer>
+    <p>© 2025 Irfaan | Built with HTML & CSS | Hosted on GitHub Pages</p>
+  </footer>  <script>
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 80;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('h2, .skills, .projects, .certs').forEach(el => {
+      observer.observe(el);
+    });
+  </script></body>
+</html>
